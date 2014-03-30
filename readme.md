@@ -29,24 +29,30 @@ plugins directory: 'wp-content/plugins/'
 ## Frequently Asked Questions ##
 
 >How do I use the plugin?
+
 When you write or edit the content of a page, simply include 
 [tagarc] (along with the brackets) whenever you want the tag arc to 
 be displayed. Make sure you activate the plugin before you use the 
 shortcode.
 
 >Why is the tag cloud not displayed, even though I included the shorttag ?
+
 The plugin probably has not yet been activated.
 
 >Why does my posted content also show the shortcode [tagcloud]?
+
 At the moment, the tag-cloud-shortcode plugin only works when used 
 in pages. The content displayed by the plugin table probably 
 malfunctioned if you used the shortcode in a post.
 
 >How can I include the Arc into my theme?
+
 You can put <?php $tcs = new TagCloudShortcode(); echo $tcs->ArcDiagram(); ?> in your header.
 
 > Why is it so slow
+
 The connections have to be estimated each time the page is loaded. It would be better to store the relations and update them as soon a post or a tag was added.
+
 
 
 
